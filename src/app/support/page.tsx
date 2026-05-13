@@ -50,9 +50,9 @@ export default function SupportPage() {
               <p>
                 An Automatic Activation Device is a safety unit fitted to a
                 parachute rig that automatically deploys the reserve canopy
-                if the wearer is still in freefall below a set altitude. The
-                CYPRES&nbsp;2 is one of the most widely used AADs in the
-                sport.
+                if the wearer is still in freefall below a set altitude.
+                CYPRES and VIGIL are the most widely used AADs on the
+                market.
               </p>
             </details>
 
