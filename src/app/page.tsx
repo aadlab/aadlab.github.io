@@ -8,14 +8,14 @@ export default function Home() {
         <div className="container">
           <img src="/aadlab-icon.png" alt="" className="hero-icon" />
           <h1>
-            Train your <span className="accent">CYPRES&nbsp;2</span>
-            <br />
-            before you ever jump it.
+            Learn to configure your{' '}
+            <span className="accent">CYPRES&nbsp;2</span> on your iPhone or
+            Android.
           </h1>
           <p className="hero-tagline">
-            A faithful training simulator of the CYPRES&nbsp;2 Changeable Mode
-            AAD — for skydivers, riggers, and instructors. Learn how to set
-            your AAD on your iPhone or Android, anywhere.
+            Button-for-button CYPRES&nbsp;2 in your pocket. Get fluent on the
+            real procedures — Press Action, two-pass mode change, activation
+            altitude, DZ offset, the lot — before you ever jump it.
           </p>
           <p className="hero-sub">Offline · Ad-free · Six languages</p>
           <div className="hero-lang-strip" aria-label="Available languages">
