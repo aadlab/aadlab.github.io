@@ -3,94 +3,156 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Support — AAD lab',
   description:
-    'Get in touch about AAD lab. Contact email, FAQs, and how to report issues.',
+    'Get help with AAD lab, report a bug, or ask a question. Contact email, FAQ, and troubleshooting.',
 };
 
 const SUPPORT_EMAIL = 'vistas.promo-7e@icloud.com';
 
 export default function SupportPage() {
   return (
-    <main className="container">
-      <section className="section" aria-labelledby="support-heading">
-        <div className="section-heading">
-          <span className="eyebrow">Support</span>
-          <h2 id="support-heading">Got a question or a bug? Get in touch.</h2>
-          <p className="section-lead">
-            AAD lab is built by one person. Every message is read, and most
-            replies happen within a couple of days.
+    <main>
+      <section className="support-hero">
+        <div className="container">
+          <p className="section-label">Support</p>
+          <h1>We&apos;re here to help.</h1>
+          <p>
+            If something isn&apos;t working as expected, if you have a feature
+            request, or if you just want to say hello — drop a line. Every
+            message is read.
           </p>
         </div>
+      </section>
 
-        <div className="support-section">
-          <article className="contact-card" aria-labelledby="contact-label">
-            <span className="label" id="contact-label">
+      <section style={{ padding: '16px 0 64px' }}>
+        <div className="container">
+          <div className="contact-block">
+            <p className="section-label" style={{ marginBottom: 10 }}>
               Email
-            </span>
-            <div className="contact-email">
-              <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
-            </div>
-            <p>
-              Bug reports, feature ideas, training questions, or anything else
-              about the app. Please include your device (iPhone / Android) and
-              the app version so issues are easier to reproduce.
             </p>
-          </article>
-
-          <div className="section-heading" style={{ marginTop: '2rem' }}>
-            <span className="eyebrow">FAQ</span>
-            <h2>Common questions</h2>
+            <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
+            <p style={{ marginTop: 16, fontSize: 14, color: 'var(--text-dim)' }}>
+              Please include your device (iPhone / Android) and the app
+              version, and describe the steps that led to the issue. A
+              screenshot or short screen recording helps enormously.
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div className="faq-list">
-            <article className="faq-item">
-              <h3>Is AAD lab affiliated with Airtec / CYPRES?</h3>
+      <section style={{ padding: '24px 0 80px' }}>
+        <div className="container">
+          <p className="section-label">FAQ</p>
+          <h2 className="section-title">Common questions.</h2>
+
+          <div className="faq">
+            <details className="faq-item">
+              <summary>What is an AAD?</summary>
               <p>
-                No. AAD lab is an independent educational simulator. It
-                references the CYPRES 2 factually as the device whose
-                behaviour it models. It is not affiliated with, endorsed by,
-                or developed by Airtec GmbH &amp; Co. KG Safety Systems, and
-                is not a substitute for the official manual or manufacturer
-                training.
+                An Automatic Activation Device is a safety unit fitted to a
+                parachute rig that automatically deploys the reserve canopy
+                if the wearer is still in freefall below a set altitude. The
+                CYPRES&nbsp;2 is one of the most widely used AADs in the
+                sport.
               </p>
-            </article>
+            </details>
 
-            <article className="faq-item">
-              <h3>Can I rely on AAD lab as my only training resource?</h3>
+            <details className="faq-item">
+              <summary>Is this the real CYPRES?</summary>
+              <p>
+                No. AAD lab is a simulator — a training tool that mirrors the
+                look, controls, and behaviour of the real CYPRES&nbsp;2
+                Changeable Mode unit so you can practise safely. It is not
+                produced by, endorsed by, or affiliated with Airtec GmbH. It
+                is not a substitute for official CYPRES training or for using
+                the real equipment.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>Does it work offline?</summary>
+              <p>
+                Yes. The entire app works without an internet connection.
+                Nothing is uploaded, nothing is downloaded after install. Fly
+                with it, train with it, use it anywhere.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>Does the app collect any data?</summary>
+              <p>
+                No. No accounts, no analytics, no trackers, no third-party
+                SDKs. Your preferences (language, haptics, theme) are stored
+                only on your device. Optional location and motion access
+                power the Compass background only — both are processed
+                on-device and never leave your phone.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>How do I change language?</summary>
+              <p>
+                Settings → Language. Choices include English, German, French,
+                Spanish, Italian, and Russian, plus a &quot;System&quot;
+                option that follows your device language. Terminology in each
+                language follows the official CYPRES&nbsp;2 manual for that
+                region.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>How do I reset the simulator to defaults?</summary>
+              <p>
+                Settings → Reset Simulator. This clears your profile and
+                restores the unit to factory-fresh state — useful if you
+                want to practise the full first-time setup flow from
+                scratch.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>Why does haptic feedback feel different on Android?</summary>
+              <p>
+                On iPhone, the Taptic Engine can produce distinct Light,
+                Medium, and Heavy impacts — so all four levels are
+                surfaced. On Android, most vibration motors can&apos;t
+                differentiate strengths reliably, so a simple On/Off toggle
+                is shown instead. &quot;On&quot; maps to the medium setting
+                internally.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>I found a bug. How do I report it?</summary>
+              <p>
+                Email{' '}
+                <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> with
+                your device model, OS version, app version, and the steps
+                that led to the issue. A screenshot or screen recording
+                helps a lot.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>Will there be more scenarios?</summary>
+              <p>
+                Yes. New scenarios are added in ongoing updates. If you have
+                a location, hazard, or DZ situation you&apos;d like to see
+                turned into a training scenario, send it through — the
+                scenarios already cover Switzerland, Singapore, Monaco, the
+                Seychelles, the Himalayas, Eloy, second-hand units, and many
+                more.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>Can I rely on AAD lab as my only training resource?</summary>
               <p>
                 No. AAD lab is a training aid. Always cross-reference
-                procedures against the official CYPRES 2 user guide and take
-                advice from a certified instructor before operating the
+                procedures against the official CYPRES&nbsp;2 user guide and
+                take advice from a certified instructor before operating the
                 physical device.
               </p>
-            </article>
-
-            <article className="faq-item">
-              <h3>Does AAD lab collect personal data?</h3>
-              <p>
-                No. The app does not collect, store, or transmit personal
-                data. Optional location and motion access power the Compass
-                background only; both are processed on-device and never leave
-                your phone. No analytics, no advertising, no third-party SDKs.
-              </p>
-            </article>
-
-            <article className="faq-item">
-              <h3>How do I switch the in-app language?</h3>
-              <p>
-                Settings → Language. AAD lab supports English, German,
-                Spanish, French, Italian, and Russian, plus a &quot;System&quot;
-                option that follows your device language.
-              </p>
-            </article>
-
-            <article className="faq-item">
-              <h3>I want to suggest a new scenario or lesson — how?</h3>
-              <p>
-                Email it. Real-world scenarios from skydivers, riggers, and
-                instructors are what makes the app useful — happy to add ones
-                that teach a concept clearly.
-              </p>
-            </article>
+            </details>
           </div>
         </div>
       </section>
