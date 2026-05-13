@@ -1,25 +1,36 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { NAV_LABELS, localeFromPath, routeFor } from '@/i18n/messages';
 
 export default function SiteFooter() {
+  const pathname = usePathname() ?? '/';
+  const locale = localeFromPath(pathname);
+  const labels = NAV_LABELS[locale];
   const year = new Date().getFullYear();
   return (
     <footer>
       <div className="container">
         <div className="footer-links">
-          <Link href="/">Home</Link>
-          <Link href="/#lessons">Lessons</Link>
-          <Link href="/#scenarios">Scenarios</Link>
-          <Link href="/#playground">Playground</Link>
-          <Link href="/support">Support</Link>
+          <Link href={routeFor(locale, '/')}>{labels.home}</Link>
+          <Link href={`${routeFor(locale, '/')}#lessons`}>
+            {labels.lessons}
+          </Link>
+          <Link href={`${routeFor(locale, '/')}#scenarios`}>
+            {labels.scenarios}
+          </Link>
+          <Link href={`${routeFor(locale, '/')}#playground`}>
+            {labels.playground}
+          </Link>
+          <Link href={routeFor(locale, '/support')}>{labels.support}</Link>
         </div>
         <p className="footer-copy">
-          AAD lab © {year} David Haygarth. All rights reserved.
+          AAD lab © {year} David Haygarth. {labels.rights}
           <br />
-          CYPRES and CYPRES&nbsp;2 are trademarks of Airtec GmbH &amp; Co. KG
-          Safety Systems. AAD lab is not affiliated with, endorsed by, or
-          developed by Airtec.
+          {labels.affiliation}
         </p>
-        <p className="footer-sign-off">Blue skies.</p>
+        <p className="footer-sign-off">{labels.signOff}</p>
       </div>
     </footer>
   );

@@ -19,14 +19,14 @@ export default function Home() {
             scenarios.
           </p>
           <p className="hero-sub">Offline · Ad-free · Six languages</p>
-          <div className="hero-lang-strip" aria-label="Available languages">
+          <nav className="hero-lang-strip" aria-label="Available languages">
             <span className="current">English</span>
-            <span>Deutsch</span>
-            <span>Français</span>
-            <span>Español</span>
-            <span>Italiano</span>
-            <span>Русский</span>
-          </div>
+            <Link href="/de/" hrefLang="de">Deutsch</Link>
+            <Link href="/fr/" hrefLang="fr">Français</Link>
+            <Link href="/es/" hrefLang="es">Español</Link>
+            <Link href="/it/" hrefLang="it">Italiano</Link>
+            <Link href="/ru/" hrefLang="ru">Русский</Link>
+          </nav>
           <div className="hero-cta-row">
             <a href="#imagine" className="btn btn-primary">
               See why it matters

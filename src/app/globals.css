@@ -250,6 +250,12 @@ img { max-width: 100%; display: block; }
   color: var(--text-dim);
 }
 .hero-lang-strip .current { color: var(--text); font-weight: 600; }
+.hero-lang-strip a {
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.hero-lang-strip a:hover { color: var(--brand-pink); opacity: 1; }
 .hero-cta-row {
   display: flex;
   justify-content: center;
