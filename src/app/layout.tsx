@@ -1,18 +1,27 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Manrope } from 'next/font/google';
 import './globals.css';
 import SiteNav from '@/components/SiteNav';
 import SiteFooter from '@/components/SiteFooter';
 import RevealOnScroll from '@/components/RevealOnScroll';
 
-// Inter drives everything — wordmark, headings, and body. Picked
-// because it reads as a modern Helvetica, ships a full 100–900 weight
-// range as a variable font, and renders identically across iOS,
-// Android, macOS, Windows, and Linux (no system-font drift).
+// Inter for body + section headings — reads as a modern Helvetica,
+// full weight range, identical across every platform.
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-display',
+  display: 'swap',
+});
+
+// Manrope for the wordmark only. Same family feel as Inter, but with
+// a touch more confident terminals at heavy weights — gives the
+// "AAD lab" mark its own visual identity without clashing with the
+// body type.
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['600', '700', '800'],
+  variable: '--font-wordmark',
   display: 'swap',
 });
 
@@ -54,7 +63,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="black" className={inter.variable}>
+    <html
+      lang="en"
+      data-theme="black"
+      className={`${inter.variable} ${manrope.variable}`}
+    >
       <head>
         <link rel="icon" type="image/png" href="/aadlab-icon.png" />
         <link rel="apple-touch-icon" href="/aadlab-icon.png" />
