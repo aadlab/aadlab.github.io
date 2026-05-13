@@ -71,7 +71,7 @@ export default function Home() {
               <p className="num">02 · ON THE COMMUTE</p>
               <h3>Twenty minutes on the tube. Make it count.</h3>
               <p>
-                London, New York, anywhere. A packed tube is dead time you
+                London, New York, anywhere. A packed tube is wasted time you
                 can&apos;t get back. Spend that time getting more skilled
                 with a device that could{' '}
                 <span className="highlight">
