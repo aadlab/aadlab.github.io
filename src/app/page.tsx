@@ -72,12 +72,12 @@ export default function Home() {
               <h3>Twenty minutes on the tube. Make it count.</h3>
               <p>
                 London, New York, anywhere. A packed tube is dead time you
-                can&apos;t get back. Trade it for something that could{' '}
+                can&apos;t get back. Run a few drills that could{' '}
                 <span className="highlight">
                   save your life or the life of another
                 </span>
-                . Something you&apos;ll genuinely enjoy practising once
-                you&apos;re fluent.
+                . Drills you&apos;ll genuinely enjoy once you&apos;re
+                fluent.
               </p>
             </article>
 
