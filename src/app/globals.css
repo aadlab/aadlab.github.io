@@ -199,15 +199,18 @@ img { max-width: 100%; display: block; }
 }
 .hero h1 {
   font-family: var(--font-display), -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
-  font-size: clamp(36px, 6vw, 60px);
+  font-size: clamp(32px, 5.6vw, 58px);
   font-weight: 700;
   letter-spacing: -0.025em;
   margin: 0 0 22px;
-  line-height: 1.18;
+  line-height: 1.28;
   background: linear-gradient(180deg, #fff 0%, #d8c0e2 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (max-width: 640px) {
+  .hero h1 { line-height: 1.32; }
 }
 .hero h1 .accent {
   background: linear-gradient(180deg, var(--brand-pink) 0%, var(--aurora-pink) 100%);
