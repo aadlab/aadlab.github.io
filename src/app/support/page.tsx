@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Support — AAD lab',
+  title: 'Support · AAD lab',
   description:
     'Get help with AAD lab, report a bug, or ask a question. Contact email, FAQ, and troubleshooting.',
 };
@@ -17,7 +17,7 @@ export default function SupportPage() {
           <h1>We&apos;re here to help.</h1>
           <p>
             If something isn&apos;t working as expected, if you have a feature
-            request, or if you just want to say hello — drop a line. Every
+            request, or if you just want to say hello, drop a line. Every
             message is read.
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function SupportPage() {
             </p>
             <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
             <p style={{ marginTop: 16, fontSize: 14, color: 'var(--text-dim)' }}>
-              Please include your device (iPhone / Android) and the app
+              Please include your device (iPhone or Android) and the app
               version, and describe the steps that led to the issue. A
               screenshot or short screen recording helps enormously.
             </p>
@@ -59,12 +59,12 @@ export default function SupportPage() {
             <details className="faq-item">
               <summary>Is this the real CYPRES?</summary>
               <p>
-                No. AAD lab is a simulator — a training tool that mirrors the
-                look, controls, and behaviour of the real CYPRES&nbsp;2
-                Changeable Mode unit so you can practise safely. It is not
-                produced by, endorsed by, or affiliated with Airtec GmbH. It
-                is not a substitute for official CYPRES training or for using
-                the real equipment.
+                No. AAD lab is a simulator. It mirrors the look, controls,
+                and behaviour of the real CYPRES&nbsp;2 Changeable Mode unit
+                so you can practise safely. It is not produced by, endorsed
+                by, or affiliated with Airtec GmbH. It is not a substitute
+                for official CYPRES training or for using the real
+                equipment.
               </p>
             </details>
 
@@ -83,7 +83,7 @@ export default function SupportPage() {
                 No. No accounts, no analytics, no trackers, no third-party
                 SDKs. Your preferences (language, haptics, theme) are stored
                 only on your device. Optional location and motion access
-                power the Compass background only — both are processed
+                power the Compass background only. Both are processed
                 on-device and never leave your phone.
               </p>
             </details>
@@ -93,9 +93,9 @@ export default function SupportPage() {
               <p>
                 Settings → Language. Choices include English, German, French,
                 Spanish, Italian, and Russian, plus a &quot;System&quot;
-                option that follows your device language. Terminology in each
-                language follows the official CYPRES&nbsp;2 manual for that
-                region.
+                option that follows your device language. Terminology in
+                each language follows the official CYPRES&nbsp;2 manual for
+                that region.
               </p>
             </details>
 
@@ -103,9 +103,8 @@ export default function SupportPage() {
               <summary>How do I reset the simulator to defaults?</summary>
               <p>
                 Settings → Reset Simulator. This clears your profile and
-                restores the unit to factory-fresh state — useful if you
-                want to practise the full first-time setup flow from
-                scratch.
+                restores the unit to factory-fresh state. Useful if you want
+                to practise the full first-time setup flow from scratch.
               </p>
             </details>
 
@@ -113,10 +112,10 @@ export default function SupportPage() {
               <summary>Why does haptic feedback feel different on Android?</summary>
               <p>
                 On iPhone, the Taptic Engine can produce distinct Light,
-                Medium, and Heavy impacts — so all four levels are
-                surfaced. On Android, most vibration motors can&apos;t
-                differentiate strengths reliably, so a simple On/Off toggle
-                is shown instead. &quot;On&quot; maps to the medium setting
+                Medium, and Heavy impacts, so all four levels are surfaced.
+                On Android, most vibration motors can&apos;t differentiate
+                strengths reliably, so a simple On/Off toggle is shown
+                instead. &quot;On&quot; maps to the medium setting
                 internally.
               </p>
             </details>
@@ -137,7 +136,7 @@ export default function SupportPage() {
               <p>
                 Yes. New scenarios are added in ongoing updates. If you have
                 a location, hazard, or DZ situation you&apos;d like to see
-                turned into a training scenario, send it through — the
+                turned into a training scenario, send it through. The
                 scenarios already cover Switzerland, Singapore, Monaco, the
                 Seychelles, the Himalayas, Eloy, second-hand units, and many
                 more.

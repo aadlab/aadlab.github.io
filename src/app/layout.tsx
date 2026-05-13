@@ -30,12 +30,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'AAD lab — CYPRES 2 simulator',
+  title: 'AAD lab · CYPRES 2 simulator',
   description:
-    'Learn to configure your CYPRES 2 on your iPhone or Android. Real button sequences, real-world scenarios, full device playground — offline, ad-free, in six languages.',
+    'Learn to configure your CYPRES 2 on your iPhone or Android. Real button sequences, real-world scenarios, full device playground. Offline, ad-free, in six languages.',
   metadataBase: new URL('https://aadlab.github.io'),
   openGraph: {
-    title: 'AAD lab — CYPRES 2 simulator',
+    title: 'AAD lab · CYPRES 2 simulator',
     description:
       'Learn to configure your CYPRES 2 on your iPhone or Android. Real button sequences, real-world scenarios, full device playground.',
     url: 'https://aadlab.github.io',

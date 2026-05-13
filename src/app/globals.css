@@ -36,9 +36,13 @@
 }
 
 [data-theme='blue'] {
-  --corner-color-1: rgba(90, 142, 255, 0.42);
-  --corner-color-2: rgba(58, 96, 200, 0.55);
-  --bg-tint: linear-gradient(180deg, #1a0e3d 0%, #0a0820 100%);
+  /* Blue Cosmos = mostly-black canvas with focused blue corner glows.
+     Per user feedback the previous Blue felt too saturated; bg-tint
+     is now near-black so the blue reads as an accent, not the whole
+     surface. */
+  --corner-color-1: rgba(90, 142, 255, 0.35);
+  --corner-color-2: rgba(58, 96, 200, 0.42);
+  --bg-tint: linear-gradient(180deg, #0d0822 0%, #050310 100%);
 }
 
 * { box-sizing: border-box; }
@@ -361,11 +365,12 @@ section { padding: 80px 0; position: relative; }
   text-transform: uppercase;
 }
 .imagine-card h3 {
-  margin: 0 0 12px;
-  font-size: 22px;
+  margin: 0 0 16px;
+  font-family: var(--font-display), -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: clamp(26px, 2.8vw, 34px);
   font-weight: 700;
-  letter-spacing: -0.005em;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
 }
 .imagine-card p {
   margin: 0;
