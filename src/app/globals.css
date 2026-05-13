@@ -33,6 +33,7 @@
   --corner-color-1: rgba(0, 0, 0, 0.95);
   --corner-color-2: rgba(0, 0, 0, 1);
   --bg-tint: linear-gradient(180deg, #1a0a28 0%, #08020f 100%);
+  --nav-bg: rgba(6, 2, 12, 0.82);
 }
 
 [data-theme='blue'] {
@@ -43,6 +44,7 @@
   --corner-color-1: rgba(90, 142, 255, 0.35);
   --corner-color-2: rgba(58, 96, 200, 0.42);
   --bg-tint: linear-gradient(180deg, #0d0822 0%, #050310 100%);
+  --nav-bg: rgba(10, 14, 38, 0.78);
 }
 
 * { box-sizing: border-box; }
@@ -94,11 +96,12 @@ img { max-width: 100%; display: block; }
 .nav {
   position: sticky;
   top: 0;
-  background: rgba(24, 9, 42, 0.75);
+  background: var(--nav-bg);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--border);
   z-index: 100;
+  transition: background 600ms ease;
 }
 .nav-inner {
   display: flex;
