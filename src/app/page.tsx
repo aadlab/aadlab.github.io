@@ -9,7 +9,7 @@ export default function Home() {
           <img src="/aadlab-icon.png" alt="" className="hero-icon" />
           <h1>
             Learn to configure your{' '}
-            <span className="accent">CYPRES&nbsp;2&nbsp;Changeable&nbsp;Mode</span>{' '}
+            <span className="accent">CYPRES&nbsp;2 Changeable Mode</span>{' '}
             on your iPhone or Android.
           </h1>
           <p className="hero-tagline">
