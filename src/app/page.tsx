@@ -8,7 +8,8 @@ export default function Home() {
         <div className="container">
           <img src="/aadlab-icon.png" alt="" className="hero-icon" />
           <h1>
-            Learn to configure your{' '}
+            Learn to configure your
+            <br />
             <span className="accent">CYPRES&nbsp;2 Changeable Mode</span>{' '}
             on your iPhone or Android.
           </h1>
