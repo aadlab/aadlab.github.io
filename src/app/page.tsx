@@ -71,14 +71,14 @@ export default function Home() {
               <p className="num">02 · ON THE COMMUTE</p>
               <h3>Twenty minutes on the tube. Make it count.</h3>
               <p>
-                London, New York, anywhere. A packed tube is wasted time you
-                can&apos;t get back. Spend that time getting more skilled
-                with a device that could{' '}
+                London, New York, San Francisco. Standing in a packed tube
+                avoiding eye contact - it&apos;s wasting minutes of your
+                life. Spend that time doing something brilliant. Learn how
+                to configure your CYPRES on your phone. It could{' '}
                 <span className="highlight">
-                  save your life or the life of another
+                  save your life, or the life of another
                 </span>
-                . A skill you&apos;ll genuinely enjoy growing once
-                you&apos;re fluent.
+                .
               </p>
             </article>
 
