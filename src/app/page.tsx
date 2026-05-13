@@ -71,8 +71,8 @@ export default function Home() {
               <p className="num">02 · ON THE COMMUTE</p>
               <h3>Twenty minutes on the tube. Make it count.</h3>
               <p>
-                London, New York, anywhere. A packed train ride is dead time
-                you can&apos;t get back. Spend it on something that could{' '}
+                London, New York, anywhere. A packed tube is dead time you
+                can&apos;t get back. Trade it for something that could{' '}
                 <span className="highlight">
                   save your life or the life of another
                 </span>
